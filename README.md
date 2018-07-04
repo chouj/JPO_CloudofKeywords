@@ -1,4 +1,4 @@
-！https://github.com/chouj/JPO_CloudofKeywords/blob/master/wordcloud_jpo_keywords_2013-2017.jpg
+![wordcloud_jpo_keywords_2013-2017](https://github.com/chouj/JPO_CloudofKeywords/blob/master/wordcloud_jpo_keywords_2013-2017.jpg)
 
 # a MATLAB script for generating cloud of keywords of the Journal of Physical Oceanography
 
