@@ -3,7 +3,7 @@ WARNING：Do not use this code illegally !
 
 Note:
 Windows code.
-MATLAB R2018a and associated Text Analytics Toolbox are required.
+MATLAB R2018a or newer and associated Text Analytics Toolbox are required.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Target journal
