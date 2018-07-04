@@ -59,9 +59,12 @@ for volume=27:47 % for instance, can be modified
     end
 end
 
+%%%%%%%%%%%%%%%%%%%%%%% Word Cloud Generation %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 document = tokenizedDocument(lower(text));
 document = removeWords(document,stopWords);
 document = erasePunctuation(document);
+
+% Remove words you dislike
 document = removeWords(document,["1997","figure","figures","fig","version",...
     "direct","view","equation","shown","level",...
     "scholarship","b","variable","section","introduction","conclusion","discussion",...
