@@ -1,9 +1,15 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-WARNING：Do not use this code illegally !
+% WARNING：Do not use this code illegally !
 
-Note:
-Windows code.
-MATLAB R2017b or newer and associated Text Analytics Toolbox are required.
+% Note:
+% Windows code.
+% MATLAB R2017b or newer and associated Text Analytics Toolbox are required.
+
+% Author: github.com/chouj
+
+% Description
+% en: a MATLAB script for generating cloud of keywords of the Journal of Physical Oceanography
+% zh: 爬学术刊物JPO论文的关键词，根据词频生成标签云。
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Target journal url
@@ -16,10 +22,10 @@ pp=importdata('{YourFolder}\p.txt');
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% web crawling %%%%%%%%%%%%%%%%%%%%%%%%%%%
 documents = cell(1); % cell array for keywords
-for issue=43:47 % for instance, can be modified
+for volume=43:47 % for instance, can be modified
     for month=1:12 % for instance, can be modified
         pause(15);
-        disp(['V',num2str(issue),' - I',num2str(month)]); 
+        disp(['V',num2str(volume),' - I',num2str(month)]); 
         pn=randi(length(pp.data),1); % get random proxy IP
         
         % set proxy
@@ -29,10 +35,10 @@ for issue=43:47 % for instance, can be modified
         
         % Dynamic webpage, thus urlread/webread will fail.
         try
-            [a1, h1] = web(['https://journals.ametsoc.org/toc/phoc/',num2str(issue),'/',num2str(month)]);
+            [a1, h1] = web(['https://journals.ametsoc.org/toc/phoc/',num2str(volume),'/',num2str(month)]);
         catch
             pause(60);
-            [a1, h1] = web(['https://journals.ametsoc.org/toc/phoc/',num2str(issue),'/',num2str(month)]);
+            [a1, h1] = web(['https://journals.ametsoc.org/toc/phoc/',num2str(volume),'/',num2str(month)]);
         end
         
         com.mathworks.mlwidgets.html.HTMLPrefs.setUseProxy(false);
