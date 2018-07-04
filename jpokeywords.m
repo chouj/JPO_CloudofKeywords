@@ -6,7 +6,7 @@ Windows code.
 MATLAB R2018a or newer and associated Text Analytics Toolbox are required.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% Target journal
+% Target journal url
 pre='https://journals.ametsoc.org';
 
 % get proxy IPs
