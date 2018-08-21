@@ -32,4 +32,4 @@ MATLAB R2017b or newer and associated Text Analytics Toolbox are required.
 # 爬学术刊物JPO论文的关键词 根据词频生成标签云
 
 # 捐赠
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](www.paypal.me/Mesoscale)
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/Mesoscale)
